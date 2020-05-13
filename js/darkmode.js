@@ -1,18 +1,9 @@
 function darkmode(){
-    document.getElementById('pizza').style.background = 'black';
-    document.getElementById('rolls').style.background = 'black';
-    document.getElementById('drinks').style.background = 'black';
-    document.getElementById('salts').style.background = 'black';
-    document.getElementById('head').style.background = 'black';
     document.body.style.background = "#222";
 }
 function lightmode(){
-    document.getElementById('pizza').style.background = '#222';
-    document.getElementById('rolls').style.background = '#222';
-    document.getElementById('drinks').style.background = '#222';
-    document.getElementById('salts').style.background = '#222';
-    document.getElementById('head').style.background = '#cb2b2b';
     document.body.style.background = "#e4ecff";
+    document.getElementsByClassName('food__text').style.color = 'black';
 }
 menu__btn.addEventListener('click',darkmode);
 menu__btn.addEventListener('click',lightmode);

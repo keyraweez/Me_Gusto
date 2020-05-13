@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href='../css/deserts.css' rel='stylesheet'>
+    <link href="../css/norm.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper"> 
+            <!-- Desktop -->
+            <div class="header__menu">
+                <div class="header__menu_text">
+                    <h1>Десерты</h1>
+                </div>
+                <div class="menu__back">
+                    <a href="../menu/menu.html">Меню</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile -->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box" id="head_adapt">
+                <li><a class="menu__item" href="../menu/menu.html">Меню</a></li>
+                <div class="menu__btn_body">
+                    <li><button class="darkmode">Тёмная тема</button></li>
+                    <li><button class="lightmode">Светлая тема</button></li>
+                </div>
+            </ul>
+            <div>
+    </header> 
+    <section>
+        <div class="wrapper">
+            <div class="first-row">
+                <a href="#"><div class="container">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../imgs/1.jpg">
+                            <p>Трайфл</p>
+                        </div>
+                        <div class="back">
+                            <div class="back-body">
+                                
+                                <p>35грн</p>
+                                <button onclick="accept();">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>
+                <!-- start -->
+                <div class="container">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../imgs/2.jpg">
+                            <p>Чизкейк</p>
+                        </div>
+                        <div class="back">
+                            <div class="back-body">
+                                
+                                <p>40грн</p>
+                                <button onclick="accept();">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <div class="container">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../imgs/3.jpg">
+                            <p>Трюфель Евы</p>
+                        </div>
+                        <div class="back">
+                            <div class="back-body">
+                                
+                                <p>35грн</p>
+                                <button onclick="accept();">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>      
+</body>
+<script src="../js/accept.js"></script>
+</html>

@@ -1,0 +1,273 @@
+/* Settings */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: 'Architects Daughter', cursive;
+    background: #222 no-repeat;
+    background-size: cover;
+    transition: .7s;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    padding-left: 10px; padding-right: 10px;
+    max-width:1170px;
+    margin: auto;
+}
+/* Header */
+.header{
+    background: #000 no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.header__menu{
+    display: flex;
+    justify-content: center;
+}
+.header__menu_text{
+    text-transform: uppercase;
+    position: relative;
+    color: aliceblue;
+}
+.header__menu_text::before{
+    content: '';
+    position: absolute;
+    width: 100px; height: 2px;
+    background: aliceblue;
+    top: 50%;
+    left: -75%;
+}
+.header__menu_text::after{
+    content: '';
+    position: absolute;
+    width: 100px; height: 2px;
+    background: aliceblue;
+    top: 50%;
+    right: -75%;
+}
+.menu__back a{
+    position: fixed;
+    cursor: pointer;
+    height: 80px;
+    width: 80px; 
+    border-radius: 50%;
+    background:#222;
+    padding-top: 25px;
+    z-index: 2;
+    color: aliceblue;
+    text-decoration: none;
+    border: 5px #000 solid;
+}
+.menu__back{
+    padding-left: 150px;
+    text-align: center;
+    
+}
+/* adapt */
+.menu__btn_body{
+    padding-left: 22%;
+}
+#btn__menu_black,#bnt__menu_white{
+     background: none; 
+     outline: none;
+     border: none;
+     transition: .4s;
+     text-align: center;
+     cursor: pointer; 
+}
+ .hamburger-menu{
+     display: none;
+ }
+ #menu__toggle {
+     opacity: 0;
+   }
+   
+   #menu__toggle:checked ~ .menu__btn > span {
+     transform: rotate(45deg);
+   }
+   #menu__toggle:checked ~ .menu__btn > span::before {
+     top: 0;
+     transform: rotate(0);
+   }
+   #menu__toggle:checked ~ .menu__btn > span::after {
+     top: 0;
+     transform: rotate(90deg);
+   }
+   #menu__toggle:checked ~ .menu__box {
+     visibility: visible;
+     right: 0;
+   }
+   .menu__btn {
+     display: flex;
+     align-items: center;
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     width: 56px;
+     height: 36px;
+     cursor: pointer;
+     z-index: 5;
+   }
+   .menu__btn > span,
+   .menu__btn > span::before,
+   .menu__btn > span::after {
+     display: block;
+     position: absolute;
+     width: 100%;
+     height: 3px;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 2px 2px 5px black;
+     transition-duration: .4s;
+   }
+   .menu__btn > span::before {
+     content: '';
+     top: -12px;
+   }
+   .menu__btn > span::after {
+     content: '';
+     top: 12px;
+   }
+   .menu__box {
+     display: block;
+     position: fixed;
+     visibility: hidden;
+     top: 0;
+     right: -100%;
+     width: 250px;
+     height: 350px;
+     margin: 0;
+     padding: 40px 0;
+     list-style: none;
+     background: #000;
+     box-shadow: 10px 30px 15px rgba(0, 0, 0, .2);
+     transition-duration: .25s;
+     border-bottom-left-radius: 65px;
+   }
+ .menu__item,.darkmode,.lightmode{
+     display: block;
+     padding: 12px 24px;
+     text-align: center;
+     color: #fff;
+     font-size: 20px;
+     font-weight: bold;
+     text-decoration: none;
+     transition-duration: .25s;
+ }
+ .darkmode,.lightmode{
+     background: none;
+     outline: none; border: none;
+ }
+@media(max-width:1108px){
+     .header{
+         z-index: 1;
+         position: fixed;
+         width: 100%;
+     }
+     .menu__back,.header__menu{
+         display: none;
+     }
+     .container{
+         margin-left:40px;
+     }
+     .hamburger-menu{
+         display: block;
+         top: 40px;
+         right: 0;
+         position: absolute;       
+     }
+     .header__logo{
+         color: #cb2b2b;
+     }
+     .fa-chevron-left,.fa-chevron-right{
+         display: none;
+     }
+ }
+ /* pizzas */
+ section{
+     padding-top: 50px;
+ }
+ .first-row,.second-row,.third-row,.fourth-row{
+     display: flex;
+     justify-content:center;
+ }
+ .second-row,.third-row,.fourth-row{
+     padding-top: 50px;
+ }
+
+ .pizza__cezar,.pizza__munchen{
+     text-align: center;
+     font-family: 'Architects Daughter', cursive;
+     font-weight: 400;
+     align-items: center;
+     font-size: 2em;
+     color: aliceblue;
+ }
+ .pizza__cezar img{
+     width: 100%;
+     height:60%;
+     border-top-right-radius: 15px;
+     border-top-left-radius: 15px;
+ }
+ .container{
+     cursor: pointer;
+ }
+ .content{
+     width: 250px; height: 600px;
+     position: relative;
+     background: #000;
+     border-radius: 10px;
+     transition: transform 1.5s ease-in;
+     transform-style: preserve-3d;
+     border: 2px solid red;
+     margin-right: 30px;
+ }
+ .front,.back{
+     position: absolute;
+     top: 0; left: 0; right: 0; bottom: 0;
+     transform-style: preserve-3d;
+     backface-visibility: hidden;
+}
+.front img{
+    width: 100%; height: 60%;
+    border-radius: 10px;
+}
+.front::before{
+    position: absolute;
+    content: '';
+    top: 8px; left: 8px; right: 8px; bottom: 8px;   
+    transform: translateZ(100px);
+}
+.back{
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    background: url(../imgs/1.jpg) no-repeat;
+    width: 100%; height: 60%;
+}
+.back-body{
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    font-size: 2em;
+    left: 50%; top: 105%;
+    transform: translate(-50%,50%) translateZ(100px);
+}
+.front p{
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    font-size: 2em;
+    left: 50%; top: 70%;
+    transform: translate(-50%,50%) translateZ(100px);
+}
+.container:hover .content{
+    transform: rotateY(180deg);
+}
+.front button{
+    margin-top: 10px;
+    outline: none; border: none; background: aliceblue;
+    cursor: pointer;
+}
