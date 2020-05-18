@@ -99,14 +99,14 @@ a{
    }
    #menu__toggle:checked ~ .menu__box {
      visibility: visible;
-     right: 0;
+     left: 0;
    }
    .menu__btn {
      display: flex;
      align-items: center;
      position: fixed;
      top: 20px;
-     right: 20px;
+     left: 10px;
      width: 56px;
      height: 36px;
      cursor: pointer;
@@ -118,34 +118,34 @@ a{
      display: block;
      position: absolute;
      width: 100%;
-     height: 3px;
+     height: 1px;
      background-color: rgb(255, 255, 255);
      box-shadow: 2px 2px 5px black;
      transition-duration: .4s;
    }
    .menu__btn > span::before {
      content: '';
-     top: -12px;
+     top: -7px;
    }
    .menu__btn > span::after {
      content: '';
-     top: 12px;
+     top: 7px;
    }
    .menu__box {
      display: block;
      position: fixed;
      visibility: hidden;
      top: 0;
-     right: -100%;
+     left: -100%;
      width: 250px;
-     height: 350px;
+     height: 250px;
      margin: 0;
      padding: 40px 0;
      list-style: none;
      background: #000;
      box-shadow: 10px 30px 15px rgba(0, 0, 0, .2);
      transition-duration: .25s;
-     border-bottom-left-radius: 65px;
+     border-bottom-right-radius: 65px;
    }
  .menu__item,.darkmode,.lightmode{
      display: block;
@@ -271,12 +271,14 @@ a{
     outline: none; border: none; background: aliceblue;
     cursor: pointer;
 }
-#dekstop{
+/* mobile */
+
+#mobile{
     display: none;
 }
-/* mobile */
 .box{
     display: flex;
+    background: #222;
     justify-content: center;
     position: relative;
     padding-top: 50px;
@@ -284,7 +286,7 @@ a{
 .box::before{
     position: absolute;
     content: '';
-    width: 100%; height: 1px;
+    width: 105%; height: 1px;
     background: white;
     top: 10%;
 }
@@ -292,11 +294,19 @@ a{
     width: 50%;
 }
 .box__text{
-    left: 65%;
+    left: 55%;
     position: absolute;
     top: 25%;
 }
 .box__text p{
-    font-size: 25px;
+    font-size: 20px;
     color: red;
+}
+@media(max-width:1100px){
+    #dekstop{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
 }
