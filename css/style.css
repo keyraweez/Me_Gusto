@@ -93,8 +93,8 @@ li{
     cursor: pointer;
 }
 .btn__menu_body{
-    display: flex;
-    padding-left: 22px;
+    
+    margin-left:422px;
 }
 .menu__btn_black{
     margin-right: 15px;
@@ -105,6 +105,14 @@ li{
     font-size: 25px;
     font-weight: bold; 
     color: #e4ecff;
+}
+.btn__menu_body button{
+    background: none;border: none;
+    outline: none;
+    padding: 0;
+}
+.btn__menu_body img{
+    width: 50px;
 }
 /* adapt menu */
 .menu__btn_body{
