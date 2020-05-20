@@ -38,8 +38,8 @@
                 <ul class="dekstop__menu">
                     <li><a href="#" id="menu">Меню</a></li>
                     <div class="btn__menu_body">
-                        <li><button class="menu__btn_black" id="menu__btn" onclick="darkmode();">Тёмная тема</button></li>
-                        <li><button class="menu__btn_white" id="menu__btn" onclick="lightmode();">Светлая тема</button></li>
+                        <button><img src="../imgs/moond.png" onclick='light()' id="light"></button>
+                        <button><img src="../imgs/moonl.png" onclick="dark()" id="dark"></button>
                     </div>
                 </ul>
                 <div class='header__img'>
@@ -49,7 +49,7 @@
         </div>
 </header>
 <section class="food">
-    <div class="wrapper">
+    <div class="wrapper__mobile">
         <div class="food__body_first" id="dekstop">
             <a href="pizza.html"><div class="pizza__block" id="pizza">
                 <img src="../imgs/menu/pattern.png" class="pattern">
@@ -162,6 +162,6 @@
     </div>
 </section>
 </body>
-<script src="../js/darkmode.js"></script>
+<script src="../js/darkmodemain.js"></script>
 <script src="../js/lax.js"></script>
 </html>

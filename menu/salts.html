@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href='../css/salts.css' rel='stylesheet'>
     <link href="../css/norm.css" rel="stylesheet">
     <title>Document</title>
@@ -19,6 +20,10 @@
                 <div class="menu__back">
                     <a href="../menu/menu.html">Меню</a>
                 </div>
+                <div class="btn__menu_body">
+                    <button><img src="../imgs/moond.png" onclick='light()' id="light"></button>
+                    <button><img src="../imgs/moonl.png" onclick="dark()" id="dark"></button>
+                </div>
             </div>
         </div>
         <!-- Mobile -->
@@ -29,15 +34,15 @@
             </label>
             <ul class="menu__box" id="head_adapt">
                 <li><a class="menu__item" href="../menu/menu.html">Меню</a></li>
-                <div class="menu__btn_body">
-                    <li><button class="darkmode">Тёмная тема</button></li>
-                    <li><button class="lightmode">Светлая тема</button></li>
+                <div class="btn__menu_body">
+                    <button><img src="../imgs/moond.png" onclick='light()' id="light"></button>
+                    <button><img src="../imgs/moonl.png" onclick="dark()" id="dark"></button>
                 </div>
             </ul>
             <div>
     </header> 
     <section>
-        <div class="wrapper">
+        <div class="wrapper__mobile">
             <div class="mobile__pizza">
                 <div class="box__main">
                     <div class="box" id="mobile">
@@ -537,4 +542,5 @@
     </section>      
 </body>
 <script src="../js/accept.js"></script>
+<script src="../js/darkmodemain.js"></script>
 </html>

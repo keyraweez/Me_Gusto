@@ -79,10 +79,10 @@ li{
     text-decoration: none;
     color: #fff;
 }
-.header__logo:hover{
+/* .header__logo:hover{
     cursor: pointer;
     font-size:18px;
-}
+} */
 #menu__btn_black,#menu__btn_white{
     background: none; 
     outline: none;
@@ -92,8 +92,7 @@ li{
     text-transform: uppercase;
     cursor: pointer;
 }
-.btn__menu_body{
-    
+.btn__menu_body{  
     margin-left:422px;
 }
 .menu__btn_black{
@@ -106,13 +105,28 @@ li{
     font-weight: bold; 
     color: #e4ecff;
 }
-.btn__menu_body button{
+.btn__menu_body button,.btn__menu_body_a button{
     background: none;border: none;
     outline: none;
     padding: 0;
 }
 .btn__menu_body img{
-    width: 50px;
+    width: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+/* mobile btns */
+.btn__menu_body_a{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn__menu_body_a img{
+    width: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn__menu_body img:hover{
+    transform: scale(1.1);
 }
 /* adapt menu */
 .menu__btn_body{

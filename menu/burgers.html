@@ -19,6 +19,10 @@
                 <div class="menu__back">
                     <a href="../menu/menu.html">Меню</a>
                 </div>
+                <div class="btn__menu_body">
+                    <button><img src="../imgs/moond.png" onclick='light()' id="light"></button>
+                    <button><img src="../imgs/moonl.png" onclick="dark()" id="dark"></button>
+                </div>
             </div>
         </div>
         <!-- Mobile -->
@@ -29,15 +33,12 @@
             </label>
             <ul class="menu__box" id="head_adapt">
                 <li><a class="menu__item" href="../menu/menu.html">Меню</a></li>
-                <div class="menu__btn_body">
-                    <li><button class="darkmode">Тёмная тема</button></li>
-                    <li><button class="lightmode">Светлая тема</button></li>
-                </div>
+                
             </ul>
             <div>
     </header> 
     <section>
-        <div class="wrapper">
+        <div class="wrapper__mobile">
             <div class="mobile__pizza">
                 <div class="box__main">
                     <div class="box" id="mobile">
@@ -193,4 +194,5 @@
     </section>      
 </body>
 <script src="../js/accept.js"></script>
+<script src="../js/darkmodemain.js"></script>
 </html>

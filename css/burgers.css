@@ -5,7 +5,7 @@
     padding: 0;
 }
 body{
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Lato', sans-serif;
     background: #222 no-repeat;
     background-size: cover;
     transition: .7s;
@@ -15,6 +15,11 @@ a{
 }
 .wrapper{
     padding-left: 10px; padding-right: 10px;
+    max-width:1170px;
+    margin: auto;
+}
+.wrapper__mobile{
+    padding:0;
     max-width:1170px;
     margin: auto;
 }
@@ -66,6 +71,58 @@ a{
     padding-left: 150px;
     text-align: center;
     
+}
+.btn__menu_body button,.btn__menu_body_a button{
+    background: none;border: none;
+    outline: none;
+    padding: 0;
+}
+.btn__menu_body{
+    align-self: center;
+}
+.btn__menu_body img{
+    width: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+/* mobile btns */
+.btn__menu_body_a{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn__menu_body_a img{
+    width: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn__menu_body img:hover{
+    transform: scale(1.1);
+}
+.btn__menu_body{  
+    margin-left:422px;
+}
+.menu__btn_black{
+    margin-right: 15px;
+}
+.menu__btn_black,.menu__btn_white{
+    outline: none; background: none; border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold; 
+    color: #e4ecff;
+}
+.btn__menu_body button,.btn__menu_body button{
+    background: none;border: none;
+    outline: none;
+    padding: 0;
+}
+.btn__menu_body img,.btn__menu_body img{
+    width: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn__menu_body img:hover{
+    transform: scale(1.1);
 }
 /* adapt */
 .menu__btn_body{
